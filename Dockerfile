@@ -2,7 +2,7 @@ FROM jupyter/datascience-notebook:latest
 
 USER root
 
-RUN apt-get update && apt-get install libpq-dev
+RUN apt-get update && apt-get -y install libpq-dev
 
 RUN pip3 install sqlalchemy
 
